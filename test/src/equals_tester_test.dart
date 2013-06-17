@@ -43,32 +43,32 @@ equalsTesterTests() {
   test("object implements invalid equals against incompatible class.", () =>
       expect(() =>
           new EqualsTester()
-            ..addEqualityGroup(new _InvalidEqualsIncompatibleClassObject()), throws));
+            ..addEqualityGroup([new _InvalidEqualsIncompatibleClassObject()]), throws));
   
   test("symmetry broken.", () => 
       expect(() => 
           new EqualsTester()
-            ..addEqualityGroup([new _NamedObject("foo").addPeers("bar"), new _NamedObject("bar")])
+            ..addEqualityGroup([new _NamedObject("foo").addPeers(["bar"]), new _NamedObject("bar")])
             ..testEquals(), throws));
   
   test("transitivity broken within an equality group.", () => 
       expect(() => 
           new EqualsTester()
             ..addEqualityGroup(
-                [new _NamedObject("foo").addPeers("bar", "baz"),
-                 new _NamedObject("bar").addPeers("foo"),
-                 new _NamedObject("baz").addPeers("foo")])
+                [new _NamedObject("foo").addPeers(["bar", "baz"]),
+                 new _NamedObject("bar").addPeers(["foo"]),
+                 new _NamedObject("baz").addPeers(["foo"])])
             ..testEquals(), throws));
   
   test("transitivity broken across equality groups.", () =>
       expect(() => 
           new EqualsTester()
             ..addEqualityGroup(
-                [new _NamedObject("foo").addPeers("bar"),
-                 new _NamedObject("bar").addPeers("foo", "x")])
+                [new _NamedObject("foo").addPeers(["bar"]),
+                 new _NamedObject("bar").addPeers(["foo", "x"])])
             ..addEqualityGroup(
-                [new _NamedObject("baz").addPeers("x"),
-                 new _NamedObject("x").addPeers("baz", "bar")])
+                [new _NamedObject("baz").addPeers(["x"]),
+                 new _NamedObject("x").addPeers(["baz", "bar"])])
             ..testEquals(), throws));
 }
 

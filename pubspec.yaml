@@ -1,7 +1,7 @@
-name: dart_restlib_testing
+name: restlib_testing
 description: A sample application
 dependencies:
-  dart_restlib_common:
+  restlib_common:
     git: https://code.google.com/p/dart-restlib.common/
   unittest: any
 

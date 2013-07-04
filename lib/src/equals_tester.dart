@@ -3,8 +3,7 @@ part of restlib.testing;
 class EqualsTester {
   final List<List> _groups = [];
   
-  EqualsTester addEqualityGroup(final List equalityGroup) {
-    checkNotNull(equalityGroup);
+  EqualsTester addEqualityGroup(final Iterable equalityGroup) {
     _groups.add(equalityGroup);
     return this;
   }

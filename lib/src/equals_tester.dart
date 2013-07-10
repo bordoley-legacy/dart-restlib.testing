@@ -8,7 +8,8 @@ class EqualsTester {
     return this;
   }
   
-  executeTestCase() => unittest.test("test equality", this.testEquals);
+  executeTestCase() => 
+      unittest.test("test equality", this.testEquals);
   
   _assertEqual(final int groupNumber, final int itemNumber) {
     final item = _groups[groupNumber][itemNumber];

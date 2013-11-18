@@ -8,7 +8,7 @@ import "package:restlib_testing/testing.dart";
 part "src/equals_tester_test.dart";
 
 testingTestGroups() {
-  group("class EqualsTester", equalsTesterTests);
+  group("class:EqualsTester", equalsTesterTests);
 }
 
 main() {

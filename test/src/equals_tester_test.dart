@@ -43,7 +43,8 @@ equalsTesterTests() {
   test("object implements invalid equals against incompatible class.", () =>
       expect(() =>
           new EqualsTester()
-            ..addEqualityGroup([new _InvalidEqualsIncompatibleClassObject()]), throws));
+            ..addEqualityGroup([new _InvalidEqualsIncompatibleClassObject()])
+            ..testEquals(), throws));
   
   test("symmetry broken.", () => 
       expect(() => 

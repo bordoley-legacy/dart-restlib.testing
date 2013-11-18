@@ -128,7 +128,7 @@ class IterableTester<T> {
       unittest.test("with empty", () =>
           unittest.expect(empty.join(), unittest.equals(""))); 
       unittest.test("with single", () =>
-          unittest.expect(singleItr.join(), unittest.equals(singleValue)));     
+          unittest.expect(singleItr.join(), unittest.equals(singleValue.toString())));     
     });
     
     unittest.group("lastWhere()", () {

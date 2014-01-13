@@ -1,10 +1,6 @@
 name: restlib_testing
-description: A sample application
+description: Convenience library for simplifying unit testing.
 dependencies:
   restlib_common:
     git: https://code.google.com/p/dart-restlib.common/
   unittest: any
-
-#dependencies:
-#  js: any
-#  unittest: any

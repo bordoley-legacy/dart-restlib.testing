@@ -35,7 +35,7 @@ abstract class AssociativeTester {
         expect(value, equals(mappedObject)));
     
     // Verify get keys
-    expect(Persistent.EMPTY_SET.addAll(testCase.keys), equals(Persistent.EMPTY_SET.addAll(mapped.keys)));
+    expect(EMPTY_SET.addAll(testCase.keys), equals(EMPTY_SET.addAll(mapped.keys)));
     
     // Verify operator[]
     testCase.keys.forEach((final key) => 

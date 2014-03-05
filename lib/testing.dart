@@ -1,4 +1,4 @@
-library restlib.testing;
+library testing;
 
 import "dart:async";
 

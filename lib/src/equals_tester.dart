@@ -1,4 +1,4 @@
-part of restlib.testing;
+part of testing;
 
 class EqualsTester {
   final List<List> _groups = [];

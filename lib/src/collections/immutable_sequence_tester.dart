@@ -1,4 +1,4 @@
-part of restlib.testing.collections;
+part of testing.collections;
 
 class ImmutableSequenceTester
     extends Object

@@ -1,4 +1,4 @@
-part of restlib.testing.collections;
+part of testing.collections;
 
 abstract class ImmutableAssociativeTester {  
   int get insertCount;

@@ -1,4 +1,4 @@
-part of restlib.testing.collections;
+part of testing.collections;
 
 abstract class StackTester {
   Iterable<int> get testSizes;

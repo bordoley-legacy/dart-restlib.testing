@@ -1,6 +1,7 @@
 name: restlib_testing
 description: Convenience library for simplifying unit testing.
 dependencies:
+  collection: any
   restlib_common:
     git: https://code.google.com/p/dart-restlib.common/
   unittest: any

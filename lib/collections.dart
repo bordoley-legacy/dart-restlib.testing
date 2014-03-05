@@ -1,5 +1,6 @@
 library testing.collections;
 
+import "package:collection/equality.dart";
 import "package:unittest/unittest.dart";
 
 import "package:restlib_common/collections.dart";
